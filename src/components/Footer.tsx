@@ -3,33 +3,34 @@ import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
-  };
-  return <footer className="bg-primary-blue text-primary-foreground">
+  const scrollToSection = (sectionId: string) =>
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+
+  return (
+    <footer className="bg-primary-blue text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4 space-x-3">
               <img
                 src={logo}
                 alt="Goldfields Commercial Mat Hire Logo"
                 className="h-12 w-auto object-contain"
               />
-            </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-none">Goldfields</span>
-                <span className="text-sm text-primary-foreground/80 leading-none">Commercial Mat Hire</span>
+                <span className="text-sm text-primary-foreground/80 leading-none">
+                  Commercial Mat Hire
+                </span>
               </div>
             </div>
+
             <p className="text-primary-foreground/80 mb-6 max-w-md">
-              Your trusted local partner for professional floor mat solutions in Kalgoorlie. 
+              Your trusted local partner for professional floor mat solutions in Kalgoorlie.
               Keeping businesses clean, safe and professionally presented since day one.
             </p>
+
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-golden" />
@@ -37,11 +38,15 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-golden" />
-                <span className="text-primary-foreground/90">info@goldfieldsmats.com.au</span>
+                <span className="text-primary-foreground/90">
+                  info@goldfieldsmats.com.au
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-golden" />
-                <span className="text-primary-foreground/90">186A Dugan Street, Kalgoorlie, WA</span>
+                <span className="text-primary-foreground/90">
+                  186A Dugan Street, Kalgoorlie, WA
+                </span>
               </div>
             </div>
           </div>
@@ -50,16 +55,28 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <nav className="space-y-3">
-              <button onClick={() => scrollToSection("home")} className="block text-primary-foreground/80 hover:text-golden transition-colors">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="block text-primary-foreground/80 hover:text-golden transition-colors"
+              >
                 Home
               </button>
-              <button onClick={() => scrollToSection("about")} className="block text-primary-foreground/80 hover:text-golden transition-colors">
+              <button
+                onClick={() => scrollToSection("about")}
+                className="block text-primary-foreground/80 hover:text-golden transition-colors"
+              >
                 About
               </button>
-              <button onClick={() => scrollToSection("services")} className="block text-primary-foreground/80 hover:text-golden transition-colors">
+              <button
+                onClick={() => scrollToSection("services")}
+                className="block text-primary-foreground/80 hover:text-golden transition-colors"
+              >
                 Services
               </button>
-              <button onClick={() => scrollToSection("contact")} className="block text-primary-foreground/80 hover:text-golden transition-colors">
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="block text-primary-foreground/80 hover:text-golden transition-colors"
+              >
                 Contact
               </button>
             </nav>
@@ -96,13 +113,20 @@ const Footer = () => {
               <span className="hidden md:inline">•</span>
               <span>Professional • Reliable • Local</span>
               <span className="hidden md:inline">•</span>
-              <a href="https://www.rughubkal.com.au/" target="_blank" rel="noopener noreferrer" className="hover:text-golden transition-colors">
+              <a
+                href="https://www.rughubkal.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-golden transition-colors"
+              >
                 Partnered with Rughub
               </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
