@@ -32,13 +32,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-md flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">GM</span>
-            </div>
-            <div className="flex flex-col">
-              <span className={`font-bold text-lg leading-none ${isScrolled ? 'text-gradient-primary' : 'text-white'}`}>Goldfields</span>
-              <span className={`text-xs leading-none ${isScrolled ? 'text-muted-foreground' : 'text-white/80'}`}>Commercial Mat Hire</span>
-            </div>
+            <img
+              src="/logo.png"
+              alt="Goldfields Commercial Mat Hire Logo"
+              className="w-8 h-8 object-contain"
+            />              
           </div>
 
           {/* Desktop Navigation */}
