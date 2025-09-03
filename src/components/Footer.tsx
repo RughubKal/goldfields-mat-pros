@@ -12,10 +12,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-golden rounded-md flex items-center justify-center">
-                <span className="text-professional-black font-bold text-sm">GM</span>
-              </div>
+            <div className="flex items-center mb-4">
+              <img
+                src="/logo.png"
+                alt="Goldfields Commercial Mat Hire Logo"
+                className="h-12 w-auto object-contain"
+              />
+            </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-none">Goldfields</span>
                 <span className="text-sm text-primary-foreground/80 leading-none">Commercial Mat Hire</span>
