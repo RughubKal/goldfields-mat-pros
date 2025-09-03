@@ -1,4 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const scrollToSection = (sectionId: string) => {
@@ -14,7 +16,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <img
-                src="/logo.png"
+                src={logo}
                 alt="Goldfields Commercial Mat Hire Logo"
                 className="h-12 w-auto object-contain"
               />
