@@ -33,8 +33,8 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img
-              src="/logo.png"
-              alt="Goldfields Commercial Mat Hire Logo"
+              src="src/assets/logo.png"
+              alt="Goldfields Commercial Mat Hire"
               className="w-8 h-8 object-contain"
             />              
           </div>
