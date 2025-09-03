@@ -36,7 +36,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Goldfields Commercial Mat Hire"
-              className="w-24 h-24 object-contain"
+              className="h-24 w-auto"
             />              
           </div>
 
