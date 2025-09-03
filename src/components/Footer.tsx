@@ -18,12 +18,6 @@ const Footer = () => {
                 alt="Goldfields Commercial Mat Hire Logo"
                 className="h-12 w-auto object-contain"
               />
-              <div className="flex flex-col">
-                <span className="font-bold text-lg leading-none">Goldfields</span>
-                <span className="text-sm text-primary-foreground/80 leading-none">
-                  Commercial Mat Hire
-                </span>
-              </div>
             </div>
 
             <p className="text-primary-foreground/80 mb-6 max-w-md">
