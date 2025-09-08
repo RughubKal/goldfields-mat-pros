@@ -38,7 +38,7 @@ const Services = () => {
                 <div className="flex-1">
                   <div className="text-center mb-6">
                     <div className="text-3xl font-bold text-golden">$8</div>
-                    <div className="text-muted-foreground">per week</div>
+                    <div className="text-muted-foreground">starting from</div>
                   </div>
                   <ul className="space-y-3">
                     <li className="flex items-start space-x-3">
