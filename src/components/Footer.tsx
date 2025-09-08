@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="text-primary-foreground/80">
                 <div className="font-medium">Commercial Mat Hire</div>
-                <div className="text-sm text-golden">From $7.77/week</div>
+                <div className="text-sm text-golden">Starting from $8/week</div>
               </div>
               <div className="text-primary-foreground/80">
                 <div className="font-medium">Logo Mat Cleaning</div>
