@@ -73,7 +73,7 @@ const Hero = () => {
           animationDelay: '1s'
         }}>
             <p className="text-lg">
-              <span className="text-golden font-semibold">Mat hire from $7.77/week</span>
+              <span className="text-golden font-semibold">Mat hire starting from $8/week</span>
               <span className="mx-4">•</span>
               <span className="text-golden font-semibold">Logo mat cleaning from $66</span>
               <span className="mx-4">•</span>
